@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>NER Application</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">GeoSense - Geospatial Querying System</h1>
+        <form method="post" action="/">
+            <div class="container-input">
+                <input type="text" placeholder="Search" name="text" class="input" style="padding: 10px;">
+              </div>
+        </form>
+    </div>
+    <video autoplay muted loop id="background-video">
+        <source src="{{ url_for('static', filename='background-vid.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
