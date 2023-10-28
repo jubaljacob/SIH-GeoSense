@@ -1,0 +1,31 @@
+/* Additional styling for the microphone icon when recording */
+#micIcon.recording {
+    animation: pulse 1s infinite;
+}
+
+.recording-status {
+    display: none;
+    background-color: rgba(255, 0, 0, 0.2);
+    color: red;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#micButton:focus + .recording-status {
+    display: block;
+}
+
+/* Animation for the microphone icon */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
